@@ -4,34 +4,29 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: '新应用 | 扣子编程',
-    template: '%s | 扣子编程',
+    default: '智能英语口语陪练',
+    template: '%s | 英语口语陪练',
   },
   description:
-    '扣子编程是一款一站式云端 Vibe Coding 开发平台。通过对话轻松构建智能体、工作流和网站，实现从创意到上线的无缝衔接。',
+    '智能英语口语陪练平台，基于 AI 技术提供真实场景对话练习、实时语法纠错和个性化学习建议，让英语口语提升更高效。',
   keywords: [
-    '扣子编程',
-    'Coze Code',
-    'Vibe Coding',
-    'AI 编程',
-    '智能体搭建',
-    '工作流搭建',
-    '网站搭建',
-    '网站部署',
-    '全栈开发',
-    'AI 工程师',
+    '英语口语',
+    '英语学习',
+    'AI 陪练',
+    '雅思口语',
+    '对话练习',
+    '语法纠错',
+    '英语学习工具',
+    '在线英语',
   ],
-  authors: [{ name: 'Coze Code Team', url: 'https://code.coze.cn' }],
-  generator: 'Coze Code',
+  authors: [{ name: 'English Practice Team' }],
   // icons: {
   //   icon: '',
   // },
   openGraph: {
-    title: '扣子编程 | 你的 AI 工程师已就位',
+    title: '智能英语口语陪练',
     description:
-      '我正在使用扣子编程 Vibe Coding，让创意瞬间上线。告别拖拽，拥抱心流。',
-    url: 'https://code.coze.cn',
-    siteName: '扣子编程',
+      '基于 AI 的英语口语练习平台，提供多场景对话练习、实时语法纠错和个性化学习建议。',
     locale: 'zh_CN',
     type: 'website',
     // images: [
@@ -39,15 +34,15 @@ export const metadata: Metadata = {
     //     url: '',
     //     width: 1200,
     //     height: 630,
-    //     alt: '扣子编程 - 你的 AI 工程师',
+    //     alt: '英语口语陪练',
     //   },
     // ],
   },
   // twitter: {
   //   card: 'summary_large_image',
-  //   title: 'Coze Code | Your AI Engineer is Here',
+  //   title: 'English Speaking Practice',
   //   description:
-  //     'Build and deploy full-stack applications through AI conversation. No env setup, just flow.',
+  //     'AI-powered English speaking practice platform with real-time grammar correction.',
   //   // images: [''],
   // },
   robots: {
