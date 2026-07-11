@@ -75,7 +75,8 @@
     "zod": "^4.3.5"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "5",
+    "@cloudflare/next-on-pages": "^1.13.16",
+    "@cloudflare/workers-types": "^4.20260702.1",
     "@react-dev-inspector/babel-plugin": "^2.0.1",
     "@react-dev-inspector/middleware": "^2.0.1",
     "@tailwindcss/postcss": "^4",
@@ -91,7 +92,8 @@
     "tailwindcss": "^4",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.110.0"
   },
   "packageManager": "pnpm@8.15.1",
   "engines": {
