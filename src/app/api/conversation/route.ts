@@ -85,15 +85,18 @@ export async function POST(request: NextRequest) {
     if (!response.ok) {
       const errorText = await response.text();
       console.error('[conversation] DeepSeek API 错误:', response.status, errorText);
-      let errorMessage = 'API 调用失败';
+      let parsedError: any = null;
       try {
-        const errorData = JSON.parse(errorText);
-        errorMessage = errorData.error?.message || errorMessage;
+        parsedError = JSON.parse(errorText);
       } catch {
-        errorMessage = errorText || errorMessage;
+        // 非 JSON 错误响应
       }
       return NextResponse.json(
-        { error: errorMessage },
+        {
+          error: 'DeepSeek API error',
+          status: response.status,
+          details: parsedError || errorText,
+        },
         { status: response.status, headers: corsHeaders }
       );
     }
