@@ -130,7 +130,7 @@ dependencies:
     version: 0.31.10
   drizzle-orm:
     specifier: ^0.45.1
-    version: 0.45.2(@types/pg@8.20.0)(pg@8.22.0)
+    version: 0.45.2(@cloudflare/workers-types@5.20260711.1)(@types/pg@8.20.0)(pg@8.22.0)
   drizzle-zod:
     specifier: ^0.8.3
     version: 0.8.3(drizzle-orm@0.45.2)(zod@4.4.3)
@@ -187,6 +187,9 @@ dependencies:
     version: 4.4.3
 
 devDependencies:
+  '@cloudflare/workers-types':
+    specifier: '5'
+    version: 5.20260711.1
   '@react-dev-inspector/babel-plugin':
     specifier: ^2.0.1
     version: 2.0.1
@@ -821,6 +824,9 @@ packages:
   /@cfworker/json-schema@4.1.1:
     resolution: {integrity: sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og==}
     dev: false
+
+  /@cloudflare/workers-types@5.20260711.1:
+    resolution: {integrity: sha512-yY6GXfyrHJa33EWaSzS5N56Lsll02kgHo4Qodz2l2DNl4L6L5yXBMZVMvcYArirdYA1xn+o8LKVRQGdRpmSMzA==}
 
   /@date-fns/tz@1.5.0:
     resolution: {integrity: sha512-lwYN/vDPeNRULcepoE/LO2Pgx+7/RV+S9ARfbc9lr2DtGkOD7pAiruHvbR1RX3Qyf6ja47EWJDMsNK5vK08DJg==}
@@ -6306,7 +6312,7 @@ packages:
       tsx: 4.23.0
     dev: false
 
-  /drizzle-orm@0.45.2(@types/pg@8.20.0)(pg@8.22.0):
+  /drizzle-orm@0.45.2(@cloudflare/workers-types@5.20260711.1)(@types/pg@8.20.0)(pg@8.22.0):
     resolution: {integrity: sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -6398,6 +6404,7 @@ packages:
       sqlite3:
         optional: true
     dependencies:
+      '@cloudflare/workers-types': 5.20260711.1
       '@types/pg': 8.20.0
       pg: 8.22.0
     dev: false
@@ -6408,7 +6415,7 @@ packages:
       drizzle-orm: '>=0.36.0'
       zod: ^3.25.0 || ^4.0.0
     dependencies:
-      drizzle-orm: 0.45.2(@types/pg@8.20.0)(pg@8.22.0)
+      drizzle-orm: 0.45.2(@cloudflare/workers-types@5.20260711.1)(@types/pg@8.20.0)(pg@8.22.0)
       zod: 4.4.3
     dev: false
 
