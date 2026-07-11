@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { generateEvaluationServer } from '@/lib/langchain/server-agent';
 import type { ScenarioType } from '@/types';
 
+export const runtime = 'edge';
+
 export async function POST(request: NextRequest) {
   try {
     const { scenarioId, history } = await request.json();
